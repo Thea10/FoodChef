@@ -1,7 +1,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow-x: hidden;
 }
+
 
 h2{
     font-size: 2.5rem;
@@ -34,18 +34,23 @@ h2{
 }
 
 
-
-.navbar{
+.nav{
   background-color: rgba(24, 24, 24, 0.65); 
  padding: 0.1rem;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 100;
 }
 
-.navbar .navbar-brand{
-    margin-left: 4%;
+.nav .navbar-brand{
+    margin-left: 3%;
 }
 
 .navbar-nav{
-    margin-left: 2%;
+    margin-left: 7%;
 } 
 
 .navbar-dark .navbar-nav .nav-link{
@@ -135,7 +140,7 @@ font-size: 0.8rem;
 
 
 .headerslider{
-    height: 80vh;
+    height: 60vh;
     background-size: cover;
     background-position: left;
     background-attachment: local;
@@ -145,7 +150,7 @@ font-size: 0.8rem;
     position: relative;
     top:40%;
     color: #ffffff;
-    width: 70vw;
+    width: 70%;
     left: 4%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -174,9 +179,8 @@ font-size: 0.8rem;
     width: 100px; 
     height: 30px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.8); 
-    position: absolute; 
-    left: 30%; 
-    top: 45%;
+    position: relative; 
+    left: 7%; 
 }
 
 .header-textarea .cube{
@@ -196,8 +200,8 @@ font-size: 0.8rem;
 }
 
 .sliderbtns{
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 55%;
     left: 50%;
 }
 
@@ -592,12 +596,12 @@ footer .fa{
 
 @media (min-width: 768px){
     .navbar .navbar-brand{
-        margin-left: 13%;
+        margin-left: 5%;
     }
     
     .navbar-nav{
         margin-right: 20%;
-        margin-left: auto;
+        margin-left: 5%;
     } 
     .nav-link:hover{
       
@@ -605,7 +609,7 @@ footer .fa{
     }
     .header-textarea{
        left: 13%;
-       width: 35vw;
+       width: 35%;
        top:35%;
     }
 
@@ -645,3 +649,4 @@ footer .fa{
     }
     
 }
+
